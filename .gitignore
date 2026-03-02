@@ -19,25 +19,18 @@ __pycache__/
 .ipynb_checkpoints
 
 # ===============================
-# Model artifacts
-# ===============================
-model/
-*.joblib
-*.pkl
-
-# ===============================
 # Training artifacts (notebooks outputs)
 # ===============================
-notebooks/artifacts/
-*.png
-*.jpg
-*.jpeg
-*.json
+notebooks/artifacts/*.joblib
+notebooks/artifacts/*.json
+notebooks/artifacts/figures/*.png
+notebooks/artifacts/figures/*.jpeg
 
 # ===============================
-# Reports (generated metadata)
+# Artifacts (generated metadata)
 # ===============================
-reports/
+artifacts/*.joblib
+artifacts/*.json
 
 # ===============================
 # Logs

@@ -61,13 +61,13 @@ def main():
         "cv_score": search.best_score_,
     }
 
-    joblib.dump(meta, REPORTS_DIR + "meta.joblib")
+    joblib.dump(meta, ARTIFACTS_DIR + "meta.joblib")
 
     metrics = evaluate_on_test(tt, X_test, y_test, label="Gradient Boosting with Tuned Threshold")
 
     print(metrics)
 
-    joblib.dump(tt, MODELS_DIR + "model.joblib")
+    joblib.dump(tt, ARTIFACTS_DIR + "model.joblib")
 
 
 if __name__ == "__main__":
