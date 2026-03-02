@@ -1,113 +1,64 @@
-# Python
+# ===============================
+# Virtual environment
+# ===============================
+bank_pred/
+venv/
+.env/
+.venv/
+
+# ===============================
+# Python cache
+# ===============================
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
-env/
-venv/
-.env
-.venv
-bank_pred/
-pythonenv*
-*.egg-info/
-dist/
-build/
-pip-log.txt
-pip-delete-this-directory.txt
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-htmlcov/
 
-# Jupyter Notebooks
-.ipynb_checkpoints/
-*.ipynb_checkpoints*
-*/.ipynb_checkpoints/*
-jupyter-notebooks/
-profile_default/
-ipython_config.py
+# ===============================
+# Jupyter
+# ===============================
+.ipynb_checkpoints
 
-# Data files - ИСКЛЮЧАЕМ данные! (см. пояснение ниже)
-*.csv
-*.xls
-*.xlsx
-*.parquet
-*.feather
-
-# Models
-*.h5
-*.hdf5
-*.pkl
-*.pickle
+# ===============================
+# Model artifacts
+# ===============================
+model/
 *.joblib
-!notebooks/artifacts/best_model_joblib  # оставляем только лучшую модель
-!notebooks/artifacts/best_model_meta.json
+*.pkl
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
+# ===============================
+# Training artifacts (notebooks outputs)
+# ===============================
+notebooks/artifacts/
+*.png
+*.jpg
+*.jpeg
+*.json
 
+# ===============================
+# Reports (generated metadata)
+# ===============================
+reports/
+
+# ===============================
 # Logs
-logs/
+# ===============================
 *.log
 
-# Virtual Environment
-bank_pred/  # твоя виртуальная папка
-lib/
-lib64/
-bin/
-include/
-pyvenv.cfg
-pip-selfcheck.json
+# ===============================
+# IDE
+# ===============================
+.vscode/
+.idea/
 
-# Config files with secrets
-configs/*.yaml
-!configs/config.yaml  # если в нем нет секретов, можно оставить
-*.secret.yaml
-*.key
-*.pem
-.kaggle
-
-# Large files
-*.zip
-*.tar
-*.gz
-*.rar
-*.7z
-
-# MLflow
-mlruns/
-mlartifacts/
-
-# DVC (если будешь использовать)
-.dvc/
-*.dvc
-
-# MacOS
+# ===============================
+# OS files
+# ===============================
 .DS_Store
-.AppleDouble
-.LSOverride
-Icon
-._*
-
-# Windows
 Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
 
-# Backup files
-*.bak
-*.backup
-
-# Temporary files
-tmp/
-temp/
-*.tmp
-*.temp
+# ===============================
+# Build / packaging
+# ===============================
+build/
+dist/
+*.egg-info/
